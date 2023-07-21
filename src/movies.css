@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.movies-content {
+  background-color: #000000;
+  overflow: auto;
+  height: 100vh;
+  color: white;
+}
+
+/*Search*/
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.search-container img {
+  width: 60px;
+  height: 70px;
+}
+
+.search-container-box {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.search-container-images img {
+  margin: 10px;
+}
+
+.title-container h1 {
+  font-size: 40px;
+}
+
+.input-container input {
+  font-size: 18px;
+  margin-top: 7px;
+  border-radius: 3px;
+  padding: 4px;
+}
+
+.input-container button {
+  font-size: 18px;
+  margin-left: 5px;
+  border-radius: 3px;
+  padding: 4px;
+  cursor: pointer;
+  background-color: rgb(196, 37, 37);
+  color: white;
+}
+
+/*EditMovies*/
+
+.movies-all h1 {
+  margin: 14px;
+}
+
+.movies-all-box img {
+  padding: 10px;
+  width: 200px;
+  height: 250px;
+}
+
+.movies-all-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.movies-all-box {
+  margin: 10px;
+  text-align: center;
+  border: 1px solid white;
+  background-color: rgb(196, 37, 37);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.movies-all-box:hover {
+  transform: scale(1.1);
+}
+
+.movies-all-box h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.mini-div {
+  position: fixed;
+  background-color: rgb(29, 42, 54);
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.thumb-icon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.thumb-count {
+  font-size: 16px;
+  color: white;
+}
+
+.mini-div,
+.mini-div a {
+  cursor: default;
+}
+
+footer {
+  margin-top: 60px;
+}
+
+.content-movies p {
+  color: white;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.clear-button {
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .search-container-box {
+    margin: 10px 0;
+  }
+
+  .input-container button {
+    margin-top: 10px;
+  }
+}
